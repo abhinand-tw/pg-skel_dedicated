@@ -23,26 +23,18 @@ pg-skel
 Зависимости
 -----------
 
-* linux 64bit (git, make, wget)
-* [Docker](http://docker.io)
-* [dcape](https://github.com/dopos/dcape)
+* Linux 64bit (git, make, wget)
+* Postgres (по умолчанию переменные настроены для варианта установки как системного сервиса)
 
 Быстрый старт
 -------------
 
-На локальной системе должен быть развернут [dcape](https://github.com/dopos/dcape), в настройках которого задан `PG_IMAGE=dopos/postgresql`.
+На локальной системе должен быть развернут Postgres, добавлена русская локаль.
 ```
 git clone https://github.com/TenderPro/pg-skel.git
-cd pg-skel
+cd pg-skel_dedicated
 make start
 ```
-
-Установка на хост dcape
------------------------
-
-Данный репозиторий является стандартным приложением [dcape](https://github.com/dopos/dcape) и его установка производится через webhook.
-
-см [Интеграция приложения в dcape](https://github.com/dopos/dcape/blob/master/DEPLOY.md)
 
 License
 -------
